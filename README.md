@@ -4,6 +4,7 @@
 
 > 一个基于**物理化学界面特征 + LightGBM** 的蛋白-蛋白结合亲和力（ΔG）**相对排序**引擎。
 > 输入一个复合物 3D 结构，输出"这个界面在已知数据里算强还是弱"。
+<img width="1014" height="2848" alt="image" src="https://github.com/user-attachments/assets/2d3f88b8-4772-4590-b6a9-000adba8851d" />
 
 ---
 
