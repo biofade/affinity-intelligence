@@ -6,6 +6,7 @@
 > built on **physicochemical interface features + LightGBM**.
 > Give it a complex 3D structure; it tells you whether that interface is
 > strong or weak relative to known data.
+<img width="1014" height="2848" alt="a9bc789d5415b15d9d571d71ae049f9a" src="https://github.com/user-attachments/assets/3c041f22-c125-456c-88d1-d449dd1cc090" />
 
 ---
 
