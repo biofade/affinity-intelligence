@@ -1,0 +1,22 @@
+# Affinity Intelligence — 核心依赖
+# 安装: pip install -r requirements.txt
+#
+# 版本为本项目实测通过的组合 (Python 3.11, Windows x64, 纯 CPU)。
+# 若需要更宽松的兼容性, 可去掉 "==x.y.z" 只保留包名。
+
+# ---- 数据处理 ----
+numpy==1.26.4
+pandas==3.0.6
+scipy==1.17.1
+
+# ---- 机器学习 ----
+scikit-learn==1.9.1
+lightgbm==4.7.0
+
+# ---- 结构解析与物理特征 ----
+biopython==1.88
+freesasa==2.2.1
+
+# ---- 可视化与前端 ----
+matplotlib==3.11.2
+streamlit==1.65.0

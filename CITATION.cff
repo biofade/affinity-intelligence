@@ -1,0 +1,88 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+title: "Affinity Intelligence: A Physicochemical-Feature-Based Protein-Protein Binding Affinity Ranking Engine"
+abstract: >-
+  Affinity Intelligence is a CPU-only protein-protein binding affinity (ΔG)
+  ranking engine. It extracts physicochemical interface features from a complex
+  3D structure (buried surface area ΔSASA, hydrogen bonds, salt bridges, contact
+  density, interface residue composition), deliberately strips out pure
+  size/volume confounders in favour of normalized intensity features, and trains
+  a LightGBM regressor on the public PPB-Affinity dataset. Train/test splitting
+  is performed at the 40% sequence-identity family level so that no protein
+  family crosses the split, eliminating homology leakage. On a family-isolated
+  test set (950 rows / 437 unseen families) the model reaches a Spearman rank
+  correlation of 0.534 with an RMSE of 2.37 kcal/mol. Because the model is
+  intentionally oriented toward wet-lab prioritization, we recommend using its
+  relative ranking output ("stronger than X% of training interfaces") rather
+  than the absolute predicted ΔG, whose magnitude is shrunk (fitted slope 0.24).
+authors:
+  - family-names: "biofade"
+    alias: "biofade"
+    website: "https://github.com/biofade"
+contact:
+  - family-names: "biofade"
+    alias: "biofade"
+    website: "https://github.com/biofade"
+repository-code: "https://github.com/biofade/affinity-intelligence"
+url: "https://github.com/biofade/affinity-intelligence"
+license: MIT
+license-url: "https://github.com/biofade/affinity-intelligence/blob/main/LICENSE"
+version: "1.1.0"
+date-released: "2026-10-11"
+keywords:
+  - protein-protein interaction
+  - binding affinity
+  - binding free energy
+  - structural bioinformatics
+  - LightGBM
+  - machine learning
+  - buried surface area
+  - SASA
+  - drug discovery
+  - wet-lab prioritization
+  - affinity ranking
+type: software
+references:
+  - type: data
+    title: "PPB-Affinity: Protein-Protein Binding Affinity dataset for AI-based protein drug discovery"
+    authors:
+      - family-names: "Liu"
+        given-names: "Huaqing"
+    doi: "10.5281/zenodo.11070823"
+    url: "https://zenodo.org/records/13054646"
+    notes: >-
+      Training data for this project. Used under its own original license; the
+      raw dataset is not redistributed in this repository.
+  - type: article
+    title: "LightGBM: A Highly Efficient Gradient Boosting Decision Tree"
+    authors:
+      - family-names: "Ke"
+        given-names: "Guolin"
+      - family-names: "Meng"
+        given-names: "Qi"
+      - family-names: "Finley"
+        given-names: "Thomas"
+      - family-names: "Wang"
+        given-names: "Taifeng"
+      - family-names: "Chen"
+        given-names: "Wei"
+      - family-names: "Ma"
+        given-names: "Weidong"
+      - family-names: "Ye"
+        given-names: "Qiwei"
+      - family-names: "Liu"
+        given-names: "Tie-Yan"
+    collection-title: "Advances in Neural Information Processing Systems"
+    volume: 30
+    year: 2017
+    url: "https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree"
+  - type: article
+    title: "FreeSASA: An open source C library for solvent accessible surface area calculations"
+    authors:
+      - family-names: "Mitternacht"
+        given-names: "Simon"
+    journal: "F1000Research"
+    volume: 5
+    start: 189
+    year: 2016
+    doi: "10.12688/f1000research.7931.1"

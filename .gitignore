@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 运行产物 / 缓存 (不要上传)
+features/features_v1.1.csv
+features/features_full.csv
+features/features_mvp.csv
+features/*_test_predictions.csv
+features/*.json
+data/pdb/*.pdb
+!data/pdb/1A22.pdb
+!data/pdb/1ACB.pdb
+data/*.txt
+data/*.json
+data/*.xlsx
+models/*.pkl
+!models/affinity_engine_v1.1.pkl
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+streamlit.log
